@@ -1,0 +1,5 @@
+
+<p>Child component: {{name}}</p>
+<button [disabled]="voted" (click)="vote(true)">Agree</button>
+<button [disabled]="voted" (click)="vote(false)">Disagree</button>
+<p>Result: {{votee}}</p>
