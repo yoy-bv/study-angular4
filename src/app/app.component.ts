@@ -9,7 +9,7 @@ import { Hero } from './hero';
 })
 export class AppComponent {
   title = 'Tour of Heroes';
-  today = Date.now();
-  percent = 1.235345;
-  opject:Object = {abc:'abc', cdf:'cdf', number:['1','2','3','4']};
+  onSubmit(value:any){
+    console.log(value);
+  }
 }
