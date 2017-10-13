@@ -29,5 +29,5 @@
 <hr>
   <h1>--- binding data for child component</h1>
   <input type="text" #textName (keyup)='0'>
-  <hero-detail (onvote)="parentVote()" *ngFor="let pesion of pesions" [name]="pesion" ></hero-detail>
-  <h2>VOTED: Agree{{agree}}; Disgree: {{disgree}}</h2>
+  <hero-detail (onvote)="parentVote($event)" *ngFor="let pesion of pesions" [name]="pesion" ></hero-detail>
+  <h2>VOTED: Agree {{agree}}; Disgree: {{disgree}}</h2>
