@@ -1,33 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{title}}!
+    Welcome to {{title | uppercase}}!
   </h1>
 </div>
 <img [src]="image" alt="">
-<h1>{{title}}</h1>
-  <h2 [class.redClass]="applyClass">My favorite hero is: {{myHero.name}}</h2>
-  <h3 [style.color]="applyColor?'blue':'organe'">abc-xyyz</h3>
-  <p>Heroes:</p>
-  <ul>
-    <li *ngFor="let hero of heroes">
-      {{ hero.name }}
-    </li>
-  </ul>
-  <p *ngIf="heroes.length > 3">There are {{heroes.length}} heroes!</p>
-  <h1>Event binding:</h1>
-  <input type="text" #name >
-  <button (click)="OnClick(name.value)">Click Me!!!!</button>
-  <p>Event binding: {{clickbinding}}</p>
-  <h1>Two way binding:</h1>
-  <label for="">First Name: </label>
-  <input type="text" [(ngModel)]="fname">
-  <label for="">Last Name: </label>
-  <input type="text" [(ngModel)]="lname">
-  Full Name: {{fname}} {{lname}}
-<br>
-<hr>
-  <h1>--- binding data for child component</h1>
-  <input type="text" #textName (keyup)='0'>
-  <hero-detail (onvote)="parentVote($event)" *ngFor="let pesion of pesions" [name]="pesion" ></hero-detail>
-  <h2>VOTED: Agree {{agree}}; Disgree: {{disgree}}</h2>
+<h1>Pipes Uppercase{{title | uppercase}}</h1>
+<h1>Pipes Lowercase{{title | lowercase}}</h1>
+
+<h1>Pipes Date {{today | date:fullDate}}</h1>
+<h1>Pipes Percent {{percent | percent:'4.3-5'}}</h1>
+<h1>Pipes Json {{opject | fetch | json}}</h1>
