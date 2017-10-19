@@ -26,7 +26,9 @@
           <div ngModelGroup="address">
             <div class="form-group">
               <label>City</label>
-              <input type="text" class="form-control" name="city" ngModel>
+              <select name="city" class="form-control" id="city" ngModel>
+                <option *ngFor="let city of cities" value="city.id">{{city.name}}</option>
+              </select>
             </div>
             <div class="form-group">
               <label>Street</label>
@@ -34,7 +36,7 @@
             </div>
           </div>
           <div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </div>
