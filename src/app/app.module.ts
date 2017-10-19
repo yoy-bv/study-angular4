@@ -4,11 +4,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { HeroDetailComponent } from './hero-detail.component';
+import { EmployeeListComponent } from './employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
