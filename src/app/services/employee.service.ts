@@ -7,6 +7,8 @@ export class EmployeeService {
             { id: 1, name: "Nguyen Van B" },
             { id: 1, name: "Trân Van C" },
             { id: 1, name: "Nguyen Van D" },
+            { id: 1, name: "Hồ Thị E" },
+            { id: 1, name: "Tô Van Đọi" },
         ];
         return employees;
     }
