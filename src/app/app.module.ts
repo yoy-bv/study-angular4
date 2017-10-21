@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HomeComponent } from './home.component';
 import { EmployeeListComponent } from './employee.component';
+import { NotFoundComponent } from './notfound.component';
 import { HttpModule } from '@angular/http';
 import { appRoutes } from './app.routes';
 @NgModule({
@@ -14,6 +15,7 @@ import { appRoutes } from './app.routes';
     HeroDetailComponent,
     EmployeeListComponent,
     HomeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
