@@ -3,13 +3,20 @@
   <h1>
     Welcome to {{title | uppercase}}!
   </h1>
+  <ul style="text-align:left">
+    <li><a routerLink="">Home</a></li>
+    <li><a routerLink="employeelist">Employees List</a></li>
+  </ul>
 </div>
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-lg-offset-3">
       <div>
-        <employee-list></employee-list>
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>
 </div>
+<section>
+  Footer
+</section>
