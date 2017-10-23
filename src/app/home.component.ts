@@ -13,6 +13,6 @@ export class HomeComponent {
 
   }
   GotoEmployee(){
-    this.router.navigate(['employeelist']);
+    this.router.navigate(['employees']);
   }
 }

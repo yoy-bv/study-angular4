@@ -7,6 +7,7 @@
             <td>Age</td>
             <td>Status</td>
             <td>CreatedAt</td>
+            <td>Action</td>
         </tr>
     </thead>
     <tbody>
@@ -16,6 +17,9 @@
             <td>{{employee.age}}</td>
             <td>{{employee.status}}</td>
             <td>{{employee.createdAt | date}}</td>
+            <td>
+                <a [routerLink]="['/employee-detail',employee.id]">Show Detail</a>
+            </td>
         </tr>
     </tbody>
 </table>

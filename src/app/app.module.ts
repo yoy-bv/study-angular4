@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HomeComponent } from './home.component';
 import { EmployeeListComponent } from './employee.component';
+import { EmployeeDetailComponent } from './employee-detail.component';
 import { NotFoundComponent } from './notfound.component';
 import { HttpModule } from '@angular/http';
 import { appRoutes } from './app.routes';
@@ -16,6 +17,7 @@ import { appRoutes } from './app.routes';
     EmployeeListComponent,
     HomeComponent,
     NotFoundComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
