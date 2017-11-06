@@ -14,4 +14,10 @@ export class EmployeeService {
     GetDetail(id:number): Observable<any> {
         return this._http.get(this.apiURL+id).map((response: Response) => response.json())
     }
+    Update(id: number, data: any): Observable<any> {
+        return this._http.put(this.apiURL + id, data).map((response: Response) => response.json())
+    }
+    Delete(id: number): Observable<any> {
+        return this._http.delete(this.apiURL + id).map((response: Response) => response.json())
+    }
 }

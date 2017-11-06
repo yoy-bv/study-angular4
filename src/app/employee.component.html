@@ -18,7 +18,9 @@
             <td>{{employee.status}}</td>
             <td>{{employee.createdAt | date}}</td>
             <td>
-                <a [routerLink]="['/employee-detail',employee.id]">Show Detail</a>
+                <a [routerLink]="['/employee-detail',employee.id]">Show Detail</a> |
+                <a [routerLink]="['/employee-edit',employee.id]">Edit</a> |
+                <a (click)="delEmployee(employee.id)" class="del-a">Delete</a>
             </td>
         </tr>
     </tbody>

@@ -16,11 +16,12 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="employees">Employees List</a>
           </li>
+          {{checkIsLogged}}
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" routerLink="login">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" (click)="Logout()">Logout</a>
           </li>
         </ul>
       </div>
@@ -28,11 +29,9 @@
   </nav>
 <div class="container">
   <div class="row">
-    <div class="col-lg-6 col-lg-offset-3">
-      <div>
+      <div class="col-md-12 section-body" style="text-align: center">
         <router-outlet></router-outlet>
       </div>
-    </div>
   </div>
 </div>
 <!-- Footer -->
