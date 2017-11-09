@@ -4,7 +4,8 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 @Injectable()
 export class EmployeeService {
-    private apiURL = "http://59eaaa0340e9fa0012cbef6e.mockapi.io/api/employees/";
+    // private apiURL = "http://59eaaa0340e9fa0012cbef6e.mockapi.io/api/employees/";
+    private apiURL = "http://localhost:8000/api/auth/getemployee";
     constructor(private _http: Http) {
 
     }

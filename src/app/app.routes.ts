@@ -5,11 +5,10 @@ import { EmployeeDetailComponent } from './employee-detail.component';
 import { EmployeeEditComponent } from './employee-edit.component';
 import { NotFoundComponent } from './notfound.component';
 import { LoginComponent } from './login.component';
-import { CheckLoginGuard } from './guard/checklogin.guard'
 
 const rounting: Routes = [
         { path: '', component: HomeComponent },
-        { path: 'employees', component: EmployeeListComponent, canActivate: [CheckLoginGuard] },
+        { path: 'employees', component: EmployeeListComponent },
         { path: 'employee-detail/:id', component: EmployeeDetailComponent },
         { path: 'employee-edit/:id', component: EmployeeEditComponent },
         { path: 'login', component: LoginComponent },

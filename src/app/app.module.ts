@@ -12,8 +12,6 @@ import { NotFoundComponent } from './notfound.component';
 import { LoginComponent } from './login.component';
 import { HttpModule } from '@angular/http';
 import { appRoutes } from './app.routes';
-import { LoginService } from './services/login.service';
-import { CheckLoginGuard } from './guard/checklogin.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +29,6 @@ import { CheckLoginGuard } from './guard/checklogin.guard';
     HttpModule,
     appRoutes,
   ],
-  providers: [LoginService, CheckLoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
