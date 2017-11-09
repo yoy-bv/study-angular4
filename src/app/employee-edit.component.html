@@ -1,0 +1,25 @@
+<form class="form-horizontal" (ngSubmit)="SaveForm()">
+    <h1>Edit Employee</h1>
+    <table *ngIf="employee" class="table">
+        <tr>
+            <td>ID</td>
+            <td><input class="form-control" type="text" name="id" [(ngModel)]="employee.id"></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input class="form-control" type="text" name="name" [(ngModel)]="employee.name"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input class="form-control" type="number" name="age" [(ngModel)]="employee.age"></td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td><input class="form-control" type="checkbox" name="status" [(ngModel)]="employee.status"></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Save</button></td>
+            <td><button (click)="GotoEmployee()">Back</button></td>
+        </tr>
+    </table>
+</form>

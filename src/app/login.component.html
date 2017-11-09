@@ -1,0 +1,13 @@
+<form class="form-horizonal" #f="ngForm" method="POST">
+    <div class="form-group">
+        <label>Username:</label>
+        <input type="text" name="name" ngModel>
+    </div>
+    <div class="form-group">
+        <label>Password:</label>
+        <input type="password" name="password" ngModel>
+    </div>
+    <div class="form-group">
+        <button type="button" (click)="CheckLogin(f.value)">Login</button>
+    </div>
+</form>
